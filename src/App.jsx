@@ -1,10 +1,10 @@
-import React from "react";
- import { Component} from "react";
-
 function App() {
 
+return <>
 
+</>
 }
+
 export default App;
 
 
