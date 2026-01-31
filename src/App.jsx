@@ -1,35 +1,34 @@
 import { useEffect, useRef, useState } from "react";
 
-  function useDebounce(func,delay) {
-  let id=useRef(null);
-  const fn =()=>{
-    clearTimeout(id.current)
-id.current=setTimeout(func,delay);
-  }
-  return fn;
-}
 
 
-function App() {
-  
-const [saving,setsaving]=useState(false)
-function AutoSave(){
-setsaving(true);
-fetch("ebtbrtteeebtbe").finally(()=>(setsaving(false)))
-}
+  export default App;
+
+
+  // function useDebounce(value){ 
+  // const [debouncedVal,setDebouncedVal]=useState(value);
+  // useEffect(()=>{
+  // const handler =setTimeout(() => {
+  //   setDebouncedVal(value)
+  // }, 3000);
+
+  // return ()=>{clearTimeout(handler);}
+  // },[value])
+  // return debouncedVal
+  // }
+  // function App() {
+  //   const [inptvalue,setinptvalue]=useState("");
+    
+  //   const debouncedval=useDebounce(inptvalue);
+  // const saving = inptvalue !== debouncedval;
+  // function onChangeHandler(e){
+  //     setinptvalue(e.target.value);
+  //   }
 
 
 
-const debouncefnc=useDebounce(AutoSave,2000);
 
-
-  return <>
-
-<textarea onChange={debouncefnc} name ="inptBox" rows={3} cols={50}> </textarea>
-{saving&&<p>Saving..</p>}   
-
-</>}
-
-export default App;
-
-
+  //   return <>
+  // <textarea value={inptvalue} onChange={onChangeHandler} rows={3} cols={50}></textarea>
+  // {saving&&<>savingg</>}
+  // </>}
