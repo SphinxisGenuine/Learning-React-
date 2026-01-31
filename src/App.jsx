@@ -1,18 +1,10 @@
-import { useEffect, useRef} from "react";
+import React from "react";
+ import { Component} from "react";
 
-function App(){
-
-
-
+function App() {
 
 
-
-return <>
-
-
-  </>
 }
-
-  export default App;
+export default App;
 
 
